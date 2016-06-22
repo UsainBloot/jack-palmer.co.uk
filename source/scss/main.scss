@@ -1,5 +1,6 @@
 /* Mixins */
 @import 'mixins/clearfix';
+@import 'mixins/gradient';
 @import 'mixins/grid';
 @import 'mixins/pxtorem';
 
@@ -9,3 +10,6 @@
 
 /* Pages */
 @import 'pages/welcome';
+
+/* Common Components */
+@import 'components/button';

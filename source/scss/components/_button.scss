@@ -1,0 +1,34 @@
+button, a.button {
+  box-sizing: border-box;
+  background: $white;
+  border: 1px solid $blue--filter;
+  color: $blue--filter;
+
+  text-decoration: none;
+
+  @include px-to-rem('padding', 10 15);
+
+  font-family: "LatoWebLight";
+  @include px-to-rem('font-size', 14);
+
+  text-transform: uppercase;
+
+  @include px-to-rem('border-radius', 5);
+  @include px-to-rem('margin', 0 5);
+
+  transition: 0.3s;
+
+  &:hover {
+    background-image: linear-gradient(to bottom right, $green--filter, $blue--filter);
+    color: $white;
+    cursor: pointer;
+  }
+
+  &:first-of-type {
+    margin-left: 0;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

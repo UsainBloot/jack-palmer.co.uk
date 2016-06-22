@@ -6,8 +6,11 @@
   .left {
     @include col(2, 5, $gap: 0);
 
+    @include gradientOverlay($green--filter, $blue--filter);
+
     height: 100vh;
-    background-color: blue;
+    position: relative;
+    background-color: $green--filter;
     background: url('../../images/background.png') no-repeat 50%;
 
     .container {
@@ -18,25 +21,7 @@
       justify-content: center;
       align-items: center;
 
-      .logo {
-        width: 100%;
-        @import '../components/animatesvg';
-
-        path {
-          fill:none;
-          stroke:$white;
-          stroke-width:5;
-          stroke-linecap:round;
-          stroke-linejoin:round;
-          stroke-miterlimit:10;
-        }
-        .path1 {
-          stroke-width:6;
-        }
-        .path3 {
-          stroke-width:7;
-        }
-      }
+      @import '../components/logo';
     }
   }
 
@@ -45,7 +30,11 @@
     height: 100vh;
     background-color: $white;
 
-    @include px-to-rem('padding', 60);
+    @import '../components/intro';
+
+    @media only screen and (max-width: 768px) {
+      height: 100%;
+    }
   }
 
 }

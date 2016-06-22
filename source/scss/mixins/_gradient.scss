@@ -1,0 +1,14 @@
+@mixin gradientOverlay($colour1, $colour2) {
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, $colour1, $colour2);
+    opacity: 0.7;
+  }
+
+}
