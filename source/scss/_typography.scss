@@ -1,1 +1,9 @@
+@import '../fonts/Lato/latofonts';
+@import '../fonts/LatoLatin/latolatinfonts';
+
 $font-size--default: 16;
+
+h1 {
+  font-family: "LatoWebHairline";
+  @include px-to-rem('font-size', 48);
+}
