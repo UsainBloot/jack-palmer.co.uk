@@ -1,0 +1,16 @@
+.welcome {
+  @include row();
+
+  .left {
+    height: 100vh;
+    background-color: blue;
+    @include col(2, 5, $first: true);
+  }
+
+  .right {
+    height: 100vh;
+    background-color: $white;
+    @include col(3, 5, $last: true);
+  }
+
+}
