@@ -75,7 +75,6 @@
       color: $grey;
       font-family: serif;
       @include px-to-rem('font-size', 36);
-      @include px-to-rem('margin', 5 0 0 5);
     }
   }
 
