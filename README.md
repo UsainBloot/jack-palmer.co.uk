@@ -22,6 +22,14 @@ When **developing** use
 gulp dev
 ```
 
+## Docker build
+```
+docker network create --driver=bridge usainbloot
+
+docker build -t usainbloot/jack-palmer.co.uk .
+docker run -p 80:80 -p 443:443 -d --net=usainbloot --name=nginx usainbloot/jack-palmer.co.uk
+```
+
 ## Development
 
 When using `gulp dev`, the boilerplate will create a **BrowserSync** session which will serve the `/public` folder to all connections on your network.
