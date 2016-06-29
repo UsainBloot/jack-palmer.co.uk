@@ -1,4 +1,5 @@
 # jack-palmer.co.uk
+[![Build Status](https://travis-ci.org/UsainBloot/jack-palmer.co.uk.svg?branch=master)](https://travis-ci.org/UsainBloot/jack-palmer.co.uk)
 
 [Uses My Personal Boilerplate](https://github.com/UsainBloot/js-gulp-boilerplate/tree/es2015)
 A JavaScript and SASS based web app boilerplate complete with automated dev and build gulp tasks.
